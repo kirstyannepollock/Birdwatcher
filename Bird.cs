@@ -48,6 +48,7 @@ namespace BirdWatcher
                     double length, double width, double weight, int sightings, string primaryColor, 
                     string secondaryColor, string tertiaryColors, string habitats, string status, string statusCode)
         {
+            Family = family;
             CommonName = commonName;
             ScientificName = scientificName;
             Length = length;
