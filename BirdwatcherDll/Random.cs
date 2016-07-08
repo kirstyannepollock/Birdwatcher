@@ -10,12 +10,12 @@ namespace BirdWatcher
     {
         private Random gen = new Random(); 
 
-        public List<Sighting> AddRandomSightings(int count)
+        public List<Sighting> AddRandomSightings(Bird bird, int count)
         {
             var sightings = new List<Sighting>();
             for (int i = 0; i < count; i++)
             {
-                sightings.Add(new Sighting { ObserverFirstName = RandomFirstName(), ObserverLastName = RandomLastName(), Place = new Place { Country = RandomCountry() }, SightingDate = RandomDate() });
+                sightings.Add(new Sighting {Bird = bird, ObserverFirstName = RandomFirstName(), ObserverLastName = RandomLastName(), Place = new Place { Country = RandomCountry() }, SightingDate = RandomDate() });
             }
             return sightings;
         }

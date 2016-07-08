@@ -56,7 +56,7 @@ namespace BirdWatcher
             Length = length;
             Width = width;
             Weight = weight;
-            Sightings = utility.AddRandomSightings(sightings);
+            Sightings = utility.AddRandomSightings(this, sightings);
             PrimaryColor = primaryColor;
             SecondaryColor = secondaryColor;
             TertiaryColors = new List<string>();
