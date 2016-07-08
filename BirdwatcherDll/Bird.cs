@@ -44,6 +44,8 @@ namespace BirdWatcher
             return string.Format("Name: {0}\n", CommonName);
         }
         
+
+        // fixed to use family
         public Bird(RandomUtility utility, string family, string commonName, string scientificName, 
                     double length, double width, double weight, int sightings, string primaryColor, 
                     string secondaryColor, string tertiaryColors, string habitats, string status, string statusCode)
