@@ -93,55 +93,7 @@ namespace BirdWatcherUser
             return count;
         }
 
-        class Book
-
-        {
-
-            public string name;
-
-            public int isbn;
-
-            public string category;
-
-            public Book(string name, int isbn, string category)
-
-            {
-
-                this.name = name;
-
-                this.isbn = isbn;
-
-                this.category = category;
-
-            }
-
-        }
-
-        void test()
-        {
-            Book b1 = new Book("book1", 554654, "Mathematics");
-            Book b2 = new Book("book2", 454654, "English");
-            Book b3 = new Book("book3", 754654, "English");
-            Book b4 = new Book("book4", 854654, "History");
-            Book b5 = new Book("book5", 154654, "Mathematics");
-            Book b6 = new Book("book6", 354654, "History");
-            List<Book> booklist = new List<Book> { b1, b2, b3, b4, b5, b6 };
-
-            IEnumerable<IGrouping<string, Book>> booklistgroups = booklist.GroupBy(b => b.category);
-
-            foreach (var bookgroup in booklistgroups)
-
-            {
-                Console.Write("\nBooks in " + bookgroup.Key + " category: ");
-
-                foreach (Book book in bookgroup)
-
-                {
-                    Console.Write(book.name + " ");
-                }
-
-            }
-        }
+      
 
         static int SightingsOfEndangeredBirds()
         {
